@@ -12,6 +12,14 @@
 	color: var(--secondary-blue);
 }
 
+input:-webkit-autofill {
+	border-radius: 10rem;
+}
+
+input:autofill {
+	border-radius: 10rem;
+}
+
 html {
 	font-size: 62.5%;
 }
@@ -108,7 +116,7 @@ main {
 .form__elem.error,
 .form__elem.empty {
 	border: 2px solid var(--secondary-red);
-	margin-bottom: 4rem;
+	margin-bottom: 3rem;
 	position: relative;
 }
 
@@ -129,12 +137,12 @@ main {
 	display: block;
 	position: absolute;
 	width: 100%;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	text-align: center;
 	color: var(--secondary-red);
 	font-weight: 600;
 	left: 0;
-	bottom: -2rem;
+	bottom: -2.5rem;
 }
 
 .form__elem.error::after {
